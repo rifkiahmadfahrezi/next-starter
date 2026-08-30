@@ -7,7 +7,7 @@ A modern, production-ready Next.js boilerplate designed to kickstart projects wi
 - **Framework**: [Next.js 16](https://nextjs.org/) (App Router & React 19)
 - **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **HTTP Client**: [xior](https://github.com/alex-cai/xior) (Axios alternative)
+- **HTTP Client**: [xior](https://github.com/suhaotian/xior) (Axios alternative)
 - **State & Data Fetching**: [TanStack Query v5](https://tanstack.com/query/latest)
 
 ## ✨ Features & Setup
