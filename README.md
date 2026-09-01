@@ -12,7 +12,7 @@ A modern, production-ready Next.js boilerplate designed to kickstart projects wi
 
 ## ✨ Features & Setup
 
-- **ESLint & Prettier**: Configured with `eslint-config-prettier` and `prettier-plugin-tailwindcss` for automated class sorting and formatting on save.
+- **Oxlint & Oxfmt**: Fast Rust-based linter and formatter with automated Tailwind class sorting and formatting on save.
 - **Husky & lint-staged**: Git pre-commit hooks that automatically check and format staged code before committing.
 - **Pre-configured Providers & Utilities**:
   - `xior` HTTP client set up in `@/lib/api`.
@@ -28,8 +28,9 @@ Using **Bun** (or your preferred package manager):
 | `bun dev`              | Runs the development server                         |
 | `bun run build`        | Builds the application for production               |
 | `bun start`            | Starts the production server                        |
-| `bun run lint`         | Runs ESLint to check for code issues                |
-| `bun run format`       | Formats all files using Prettier                    |
+| `bun run lint`         | Runs Oxlint to check for code issues                |
+| `bun run lint:fix`     | Runs Oxlint and auto-fixes issues                   |
+| `bun run format`       | Formats all files using Oxfmt                       |
 | `bun run format:check` | Checks code formatting                              |
 | `bun run type-check`   | Runs TypeScript type checker without emitting files |
 
@@ -45,7 +46,7 @@ Using **Bun** (or your preferred package manager):
 ├── providers/
 │   └── query-provider.tsx # TanStack Query client provider
 ├── .husky/                # Git pre-commit hook
-├── eslint.config.mjs      # ESLint flat config
-├── .prettierrc            # Prettier configuration
+├── .oxlintrc.json         # Oxlint configuration
+├── .oxfmtrc.json          # Oxfmt configuration
 └── tsconfig.json          # TypeScript config (with @/* path alias)
 ```
