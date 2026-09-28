@@ -37,7 +37,7 @@ export default function Home() {
 
   const features = [
     {
-      title: "Oxlint & Oxfmt Setup",
+      title: "ESLint & Prettier Setup",
       description: "Pre-configured format on save with Tailwind class sorting.",
     },
     {
